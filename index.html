@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avs Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            transition: background 0.3s, color 0.3s;
+            background: #f9f9f9;
+            color: #000;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .projects {
+            margin-top: 50px;
+        }
+        .project {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .project img {
+            width: 45%;
+            height: 200px;
+            background: #ccc;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+        .footer a {
+            /*color: #ff4081;*/
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .modal-dialog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .modal-content {
+            background: #ffffff;
+            color: #000;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode .modal-content {
+            background: #1e1e1e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2><span class="avs text-primary">Avs</span> <span class="design">Designs.</span></h2>
+            <nav>
+                <a href="#">Work</a>
+                <a href="About.html">About</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                <button id="darkModeToggle" class="toggle-btn">🌙</button>
+            </nav>
+        </header>
+        <div class="intro">
+            <div>
+                <h1>Hello, I’m Arun V S</h1>
+                <p>A UX designer passionate about understanding people, solving problems, and creating seamless, impactful experiences that balance user needs and business goals.</p>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <div>
+                    <h5>Edvdo – AI-Powered Career Guidance</h5>
+                    <p style="margin-right: 10px;">Transforming student career decisions with an intuitive, AI-driven platform.</p>
+                    <a href="project1.html">See case study →</a>
+                </div>
+                <img src="Assets/P1/Desktop - 2.png" alt="Project Image">
+            </div>
+            <div class="project">
+                <div>
+                    <h5>Curefinity – A Smarter, Simpler Healthcare Experience</h5>
+                    <p style="margin-right: 10px;">A conceptual healthcare app designed to simplify healthcare professional-patient interactions and enhance accessibility.</p>
+                    <a href="project2.html">See case study →</a>
+                </div>
+                <img src="Assets/P2/s1.png" alt="Project Image">
+            </div>
+            <div class="project">
+                <div>
+                    <h5>GoBeyond – Smarter Travel Planning</h5>
+                    <p style="margin-right: 10px;">A travel planning platform with smart recommendations and seamless booking.</p>
+                    <a href="project3.html">See case study →</a>
+                </div>
+                <img src="Assets/P3/Mobile shot thumbnail.png" alt="Project Image">
+            </div>
+        </div>
+        <div class="footer">
+            <p>Arun V S - 2025</p>
+            <a href="https://www.behance.net/arunvs4" target="_blank">Behance</a>
+            <a href="https://www.linkedin.com/in/arun-v-s-b138a11a3/" target="_blank">LinkedIn</a>
+            <a href="https://medium.com/@vsarun893" target="_blank">Medium</a>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Phone:</strong> +123 456 7890</p>
+                    <p><strong>Email:</strong> example@email.com</p>
+                    <p><strong>WhatsApp:</strong> +123 456 7890</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if dark mode was previously enabled
+            if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+        });
+    
+        document.getElementById('darkModeToggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+    
+            // Save the dark mode setting in localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
+    
+</body>
+</html>
