@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edvdo | Case Study</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            transition: background 0.3s, color 0.3s;
+            background: #f9f9f9;
+            color: #000;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .modal-dialog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .modal-content {
+            background: #ffffff;
+            color: #000;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode .modal-content {
+            background: #1e1e1e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2><span class="avs text-primary">Avs</span> <span class="design">Designs.</span></h2>
+            <nav>
+                <a href="index.html">Work</a>
+                <a href="About.html">About</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                <button id="darkModeToggle" class="toggle-btn">🌙</button>
+            </nav>
+        </header>
+
+        <h1 style="margin-top: 30px;">Edvdo – AI-Powered Career Guidance with a Human Touch</h1>
+        <img  style="margin-top: 10px;" src="Assets/P1/Desktop - 1.png" alt="Description" width="700" height="300">
+        
+        <h2 style="margin-top: 50px;">The Why</h2>
+        <ul style="margin-left: 20px;">
+            <li>What should I do after school?</li>
+            <li>Which career is right for me?</li>
+            <li>Am I making the right choice?</li>
+        </ul>
+        <p>Every student faces these questions, but the journey to finding the right answers is often confusing. The abundance of career options, conflicting advice, and lack of structured guidance leave students feeling lost.</p>
+        <p>Traditional career counseling can be expensive, limited, and inconsistent. AI-powered platforms offer insights, but without human expertise, they can feel impersonal. Students don’t just need suggestions; they need clarity, confidence, and guidance that feels personal and reliable.</p>
+        <p><strong>Edvdo was created to solve this, an AI-powered career guidance platform that combines intelligent recommendations with expert mentorship, ensuring students make informed and confident career decisions.</strong></p>
+        
+        <h2 style="margin-top: 50px;">The What</h2>
+        <p>Edvdo is more than just a career guidance platform, it’s a personalized roadmap for students, combining AI-driven insights with human mentorship to ensure clarity in career decisions.</p>
+        <p>Instead of overwhelming students with endless career options, Edvdo simplifies the journey by analyzing their strengths, interests, and aspirations. It provides tailored recommendations, career roadmaps, and expert-backed validation to help students make confident choices.</p>
+        <p>With an intuitive interface, AI-powered insights, and real-world mentor support, Edvdo ensures that every student gets not just career suggestions, but a clear, guided path forward.</p>
+
+        <h2 style="margin-top: 50px;">My role</h2>
+        <p>Since this was an NDA project, I can only share a high-level overview of my contributions:</p>        
+        <p>I was responsible for:</p>        
+        <ul style="margin-left: 20px;">
+            <li><strong>Secondary Research: </strong>Understanding existing career guidance platforms, user pain points, and best practices.</li>
+            <li><strong>UX Strategy & Information Architecture: </strong>Designed a structured, intuitive flow for educators and students.</li>
+            <li><strong>UI Design & Prototyping: </strong>Crafting intuitive UI/UX that balances AI-driven suggestions with human mentorship.</li>
+            <li><strong>User Testing & Iteration: </strong>Conducting usability tests to refine interactions and ensure a smooth experience.</li>
+        </ul>
+
+        <img  style="margin-top: 10px;" src="Assets/P1/Desktop - 2.png" alt="Description" width="700" height="500">
+        
+        <h2 style="margin-top: 50px;">Research & Insights</h2>
+        <ul style="margin-left: 20px;">
+            <li>Conducted secondary research to analyze how existing career guidance platforms function.</li>
+            <li>Identified three major pain points: lack of personalization, confusing interfaces, and inefficient expert-student interactions.</li>
+            <li>Mapped out student and expert journeys to streamline the platform’s workflow.</li>
+        </ul>
+
+        <h2 style="margin-top: 50px;">Design Process & Key Decisions</h2>
+        <ul style="margin-left: 20px;">
+            <li>Created wireframes and prototypes to test different layouts and information architectures.</li>
+            <li>Prioritized accessibility by ensuring contrast ratios, readable typography, and intuitive navigation.</li>
+            <li>Implemented a step-by-step guided flow for students to receive AI-powered career recommendations seamlessly.</li>
+        </ul>
+
+        <h2 style="margin-top: 50px;">Challenges & How I Tackled Them</h2>
+        <h5 style="margin-left: 30px; margin-top: 20px"> &#10004; Balancing AI & Human Expertise</h5>
+        <p style="margin-left: 50px;">Users often find AI suggestions impersonal, but relying solely on human mentors could lead to inconsistency.</p>
+        <p style="margin-left: 70px;"><strong>Solution: </strong> Designed an interface where AI generates insights, and human mentors provide validation and personalized recommendations, creating a hybrid approach.</p>
+
+        <h5 style="margin-left: 30px; margin-top: 20px"> &#10004; Building Trust in AI-Generated Insights</h5>
+        <p style="margin-left: 50px;">Students and parents were hesitant to rely on AI-driven career suggestions.</p>
+        <p style="margin-left: 70px;"><strong>Solution: </strong> Added transparency by showcasing reasoning behind AI recommendations, explaining career paths, and enabling mentor feedback.</p>
+
+        <h5 style="margin-left: 30px; margin-top: 20px;"> &#10004; Simplifying Complex Career Data</h5>
+        <p style="margin-left: 50px;">Too much information can overwhelm students rather than guide them.</p>
+        <p style="margin-left: 70px;"><strong>Solution: </strong> Created structured dashboards with visual progress tracking, step-by-step career roadmaps, and bite-sized insights to keep engagement high.</p>
+
+        <h2 style="margin-top: 50px;">Final Outcome</h2>
+        <p>Edvdo was built from the ground up to bridge the gap between AI-driven career recommendations and human mentorship. The platform successfully integrates smart automation with expert insights, creating a personalized, efficient, and accessible career guidance experience. </p>
+        
+        <p><strong>👀 Explore the Platform</strong></p>
+        <p><a href="https://www.edvdo.com" target="_blank" style="color:#ff4081; text-decoration:none; font-weight:bold;">Experience Edvdo in Action →</a></p>
+    </div>
+
+    <div class="footer">
+        <p>Arun V S - 2025</p>
+        <a href="https://www.behance.net/arunvs4" target="_blank">Behance</a>
+        <a href="https://www.linkedin.com/in/arun-v-s-b138a11a3/" target="_blank">LinkedIn</a>
+        <a href="https://medium.com/@vsarun893" target="_blank">Medium</a>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Email: example@email.com</p>
+                    <p>LinkedIn: <a href="#">Profile Link</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if dark mode was previously enabled
+            if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+        });
+    
+        document.getElementById('darkModeToggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+    
+            // Save the dark mode setting in localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoBeyond | Case Study</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            transition: background 0.3s, color 0.3s;
+            background: #f9f9f9;
+            color: #000;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+        .footer a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .modal-dialog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .modal-content {
+            background: #ffffff;
+            color: #000;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode .modal-content {
+            background: #1e1e1e;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2><span class="avs text-primary">Avs</span> <span class="design">Designs.</span></h2>
+            <nav>
+                <a href="index.html">Work</a>
+                <a href="About.html">About</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                <button id="darkModeToggle" class="toggle-btn">🌙</button>
+            </nav>
+        </header>
+
+        <h1 style="margin-top: 30px;">GoBeyond – Redefining Travel Planning with Smart Guidance</h1>
+        <img  style="margin-top: 10px;" src="Assets/P3/Mobile shot thumbnail.png" alt="Description" width="700" height="450">
+        
+        <h2 style="margin-top: 50px;">Overview</h2>
+        <p>GoBeyond is a self-initiated conceptual project designed to solve common frustrations travelers face while planning trips. The goal was to integrate itinerary planning, real-time recommendations, and one-click bookings into a single platform—powered by AI and smart automation.</p>
+        <p><strong>Simplifying Trip Planning with a Personalized & Seamless Experience</strong></p>
+        <ul style="margin-left: 50px;">
+            <li><strong>Project type: </strong>Self-initiated</li>
+            <li><strong>Role: </strong>UX Designer</li>
+            <li><strong>Key Responsibilities: </strong> Research, Wireframing, UI Design, Prototyping</li>
+            </li>
+        </ul>
+        
+        <h2 style="margin-top: 50px;">The Challenge</h2>
+        <p><strong>Why Was GoBeyond Needed?</strong></p>        
+        <p>Planning a trip involves navigating multiple platforms—flights, stays, activities, and local transport—leading to information overload and decision fatigue. Travelers often face:</p>        
+        <ul style="margin-left: 50px;">
+            <li><strong>Too Many Options: </strong>Users struggle to compare and finalize bookings.</li>
+            <li><strong>Lack of Personalization: </strong>Generic recommendations don’t match unique travel styles.</li>
+            <li><strong>Scattered Information: </strong>Switching between multiple platforms disrupts the journey.</li>
+            <li><strong>Unexpected Issues: </strong>Last-minute surprises due to poor planning or missing insights.
+            </li>
+        </ul>
+        <p><strong>💡 How might we create a unified, AI-powered travel platform that simplifies decision-making and enhances the trip experience?</strong></p>
+
+        <h2 style="margin-top: 50px;">Research & Insights</h2>
+        <p><strong>Understanding the Traveler’s Journey</strong></p>        
+        <p>To validate these challenges, I conducted:</p>
+        <ul style="margin-left: 50px;">
+            <li><strong>User Surveys: </strong>Gathering insights on trip planning habits and frustrations.</li>
+            <li><strong>Competitor Analysis: </strong>Studying platforms like Airbnb, Google Trips, TripAdvisor, and Expedia.</li>
+            <li><strong>Traveler Interviews: </strong>Understanding real-life struggles in trip planning.</li>
+        </ul>
+        <img  style="margin-top: 0px;" src="Assets/P3/R.png" alt="Description" width="700" height="500">
+
+        <p style="margin-left: 30px; margin-top: 20px;"><strong>Key Findings</strong></p>
+        <ul style="margin-left: 50px;">
+            <li>Travelers often feel overwhelmed with too many choices.</li>
+            <li>Many prefer a single app for itinerary, booking, and local tips.</li>
+            <li>Complex UX and scattered information lead to abandoned bookings.</li>
+            <li>Personalized recommendations and local insights are highly valued.</li>
+        </ul>
+        <p>&#128270;<strong> Opportunity Identified:</strong>There’s a gap in the market for a platform that combines planning, booking, and real-time guidance into a smooth, user-friendly experience.</p>
+        
+        <h2 style="margin-top: 50px;">The Solution</h2>
+        <img  style="margin-top: 10px; margin-left: 0px;" src="Assets/P3/Desktop - 1 (2).png" alt="Description" width="650" height="350">
+        <p style="margin-top: 20px;">GoBeyond is a smart travel planning platform that provides:</p>
+        <h5 style="margin-left: 30px;"> &#10004; Smart Itinerary Builder</h5>
+        <ul style="margin-left: 50px;">
+            <li>Personalized trip plans based on budget, interests, and duration.</li>
+            <li>Automated recommendations for activities, restaurants, and local experiences.</li>
+        </ul>
+        
+        <h5 style="margin-left: 30px;">&#10004; One-Click Booking</h5>
+        <ul style="margin-left: 50px;">
+            <li>Integrated system for flights, stays, and experiences.</li>
+            <li>Eliminates the hassle of switching between multiple websites.</li>
+        </ul>
+
+        <h5 style="margin-left: 30px;">&#10004; Smart Local Insights & Real-Time Updates</h5>
+        <ul style="margin-left: 50px;">
+            <li>Hidden gems, cultural etiquette, weather alerts, and safety updates.</li>
+            <li>AI-driven recommendations based on location and traveler interests.</li>
+        </ul>
+        
+        <h5 style="margin-left: 30px;"> &#10004; Offline Access for Travelers</h5>
+        <ul style="margin-left: 50px;">
+            <li>Essential itinerary details, maps, and emergency contacts available without internet.</li>
+        </ul>
+        <img  style="margin-top: 10px; margin-left: 0px;" src="Assets/P3/Desktop - 1 (1).png" alt="Description" width="650" height="350">
+
+        <h2 style="margin-top: 50px;">Design Process</h2>
+        <ul style="margin-left: 50px; margin-top: 20px;">
+            <li><strong>Empathize: </strong>Conducted user interviews & surveys to identify pain points.</li>
+            <li><strong>Define: </strong>Created user personas & journey maps.</li>
+            <li><strong>Ideate: </strong>Developed wireframes & sketched possible solutions.</li>
+            <li><strong>Design: </strong>Created high-fidelity UI mockups & interactive prototypes in Figma.</li>
+            <li><strong>Test & Iterate: </strong>Conducted usability testing, refined UX flows for seamless navigation.</li>
+        </ul>
+
+        <h2 style="margin-top: 50px;">Key Design Decisions</h2>
+        <h5 style="margin-left: 30px; margin-top: 20px;"> &#128161; Simplicity-First UI</h5>
+        <ul style="margin-left: 50px;">
+            <li>Minimalistic navigation focused on user priorities.</li>
+            <li>Smart filters to refine trip options in seconds.</li>
+        </ul>
+
+        <h5 style="margin-left: 30px;"> &#128161; Smart  Itinerary Planning</h5>
+        <ul style="margin-left: 50px;">
+            <li>Itineraries adjust dynamically based on user preferences.</li>
+            <li>Users receive real-time travel insights like weather alerts and crowd levels.</li>
+        </ul>
+
+        <h5 style="margin-left: 30px;"> &#128161; End-to-End Travel Experience</h5>
+        <ul style="margin-left: 50px;">
+            <li>No need to switch between apps—everything is in one place.</li>
+        </ul>
+        <h2 style="margin-top: 50px;">Final Outcome</h2>
+        <p>GoBeyond envisions a more intuitive, efficient, and enjoyable way for users to plan their trips. By integrating AI-driven planning, real-time recommendations, and seamless booking, it reduces the complexity of travel planning and creates a personalized experience for every user.</p>
+        <p>While this remains a conceptual project, the design and research insights lay the foundation for a smarter travel platform that can be developed in the future.</p>
+        
+        <p><strong>👀 Want to explore the full design process?</strong></p>
+        <p><a href="https://www.behance.net/gallery/184011631/UI-UX-Case-study-GoBeyond-Travel-guidance-platform" target="_blank" style="color:#ff4081; text-decoration:none; font-weight:bold;">View the detailed case study →</a></p>
+    </div>
+
+    <div class="footer">
+        <p>Arun V S - 2025</p>
+        <a href="https://www.behance.net/arunvs4" target="_blank">Behance</a>
+        <a href="https://www.linkedin.com/in/arun-v-s-b138a11a3/" target="_blank">LinkedIn</a>
+        <a href="https://medium.com/@vsarun893" target="_blank">Medium</a>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Email: example@email.com</p>
+                    <p>LinkedIn: <a href="#">Profile Link</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if dark mode was previously enabled
+            if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+        });
+    
+        document.getElementById('darkModeToggle').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+    
+            // Save the dark mode setting in localStorage
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
